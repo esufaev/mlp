@@ -1,0 +1,40 @@
+\sloppy
+
+% Класс G2-105 сам подключает fontenc T2A и inputenc, поэтому здесь их нет.
+\usepackage[english, russian]{babel}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage{enumerate}
+
+\usepackage[
+    bookmarks=true, colorlinks=true, unicode=true,
+    urlcolor=black, linkcolor=black, anchorcolor=black,
+    citecolor=black, menucolor=black, filecolor=black,
+]{hyperref}
+
+\lstset{
+    basicstyle=\ttfamily\scriptsize,
+    backgroundcolor=\color{gray!8},
+    frame=single,
+    breaklines=true,
+    breakatwhitespace=true,
+    keywordstyle=\color{blue!60!black},
+    commentstyle=\color{green!45!black},
+    stringstyle=\color{red!50!brown},
+    showstringspaces=false,
+    columns=fullflexible,
+    keepspaces=true,
+    tabsize=4,
+    captionpos=b,
+}
+
+% Поля с запасом на переплёт
+\geometry{left=30mm}
+\geometry{right=20mm}
+
+\setcounter{tocdepth}{2}

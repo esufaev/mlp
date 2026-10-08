@@ -1,0 +1,36 @@
+%% Многослойный персептрон --- отчёт по проекту
+
+% cmap подключается до класса: иначе кириллица в собранном PDF не копируется и не ищется
+\RequirePackage{cmap}
+
+\documentclass[utf8, 12pt]{G2-105}
+
+\include{10-preamble}
+
+\begin{document}
+
+\frontmatter
+\include{11-title-page}
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\tableofcontents
+\clearpage
+
+\include{2-intro}
+
+\mainmatter
+
+\include{32-theory}
+\include{33-implementation}
+\include{34-experiments}
+\include{35-results}
+
+\backmatter
+
+\include{4-conclusion}
+
+\myappendix
+\include{61-appendix}
+
+\end{document}

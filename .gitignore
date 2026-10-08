@@ -1,0 +1,24 @@
+build/
+build-*/
+out/
+.cache/
+compile_commands.json
+
+# generated artifacts
+*.mlp
+data/data_training.csv
+data/data_validation.csv
+plots/
+*.png
+
+# the report ships with its figures and its built pdf: the reviewer should not
+# have to run the training or a latex toolchain to read it
+!report/img/
+!report/img/*.png
+
+# latex scratch
+report/tex/*.aux
+report/tex/*.log
+report/tex/*.out
+report/tex/*.toc
+report/tex/*.pdf
